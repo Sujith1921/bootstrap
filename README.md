@@ -1,3 +1,3 @@
 # bootstrap
 
-hellow everyone
+hello everyone
