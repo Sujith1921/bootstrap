@@ -1,0 +1,136 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Grid Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #1e3a8a;
+            color: white;
+            padding: 10px;
+            margin-top: 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+        }
+
+        .card {
+            position: relative;
+            background-color: #e6e6e6;
+            color: white;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 5px;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .category {
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .title {
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hindustan Times News</h1>
+        <div class="grid">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Crime News">
+                <div class="overlay">
+                    <div class="category">Crime</div>
+                    <div class="title">Gujarat ATS nabs drug manufacturing...</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="India News">
+                <div class="overlay">
+                    <div class="category">India</div>
+                    <div class="title">Kharge attacks Modi over Dibrugarh express accident...</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="World News">
+                <div class="overlay">
+                    <div class="category">World</div>
+                    <div class="title">JD Vance has become US 'biggest cheerleader' for Trump...</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Entertainment News">
+                <div class="overlay">
+                    <div class="category">Entertainment</div>
+                    <div class="title">Asif Ali wins hearts by gifting paper boat to fan...</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Trending News">
+                <div class="overlay">
+                    <div class="category">Trending</div>
+                    <div class="title">Egyptian man visits seven wonders of the world in a week...</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Latest News">
+                <div class="overlay">
+                    <div class="category">Latest News</div>
+                    <div class="title">Dibrugarh Express derails in Uttar Pradesh's Gonda...</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Politics News">
+                <div class="overlay">
+                    <div class="category">Politics</div>
+                    <div class="title">I am speaking to AIADMK members and leaders: OPS...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

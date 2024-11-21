@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border:1px solid black;
+            width:800px;
+            height:400px;
+            padding: 1%;
+            margin: auto;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #000;
+        }
+        th {
+            text-align: center;
+            font-size: 20px;
+        }
+        input[type="text"], input[type="email"], input[type="date"], textarea {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        button :hover{
+            background-color: aqua;
+        }
+        
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+<th colspan="2"><b>Registration For</b></th>
+</tr>
+<tr>
+    <td><label for="Name"> Student Name:</label></td>
+<td><input type="text" name="name" value="" required></td>
+    </tr>
+<tr>
+<td><label for="Name">Father's Name:</label></td>
+<td><input type="text" name="name" value="" required></td>
+</tr>
+<tr>
+<td><label for="Name">Mother's Name:</label></td>
+<td><input type="text" name="name" required ></td>
+</tr>
+<tr>
+    <td><label for="Age">Date of Birth:</label></td>
+    <td><input type="date" name="date of Birth"  value="" required></td>
+</tr>
+<tr>
+    <td>Gender:</td>
+    <td>
+        <input type="radio" name="gender" value="Male" required> Male
+        <input type="radio" name="gender" value="Female" required> Female
+    </td>
+</tr>
+<tr>
+    <td>Email ID</td>
+    <td><input type="email" name="email" required></td>
+</tr>
+<tr>
+    <td>Mobile No.</td>
+    <td><input type="text" name="mobile" required></td>
+</tr>
+<tr>
+    <td>Address</td>
+    <td><textarea name="address" rows="4" required></textarea></td>
+</tr>
+<tr>
+    <td>State</td>
+    <td><input type="text" name="state" required></td>
+</tr>
+<tr>
+    <td>City</td>
+    <td><input type="text" name="city" required></td>
+</tr>
+<tr>
+    <td colspan="2">
+    <button type="submit">Submit</button></td>
+</tr>
+</table>
+    </form>
+</body>
+</html>

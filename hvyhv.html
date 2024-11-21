@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Login Form</title>
+    <style>
+        /* Basic styles for the login form */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+        .login-container {
+            width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .login-container h2 {
+            color: #8B0000;
+        }
+        .login-container img {
+            width: 100px;
+            height: 100px;
+            align-content: center;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-container input[type="checkbox"] {
+            margin-top: 10px;
+        }
+        .login-container .btn-login {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-container .btn-cancel {
+            width: 100%;
+            padding: 10px;
+            background-color: #FF6347;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .login-container .forgot-password {
+            display: block;
+            margin-top: 10px;
+            color: #6A5ACD;
+            text-decoration: none;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 500px) {
+            .login-container {
+                width: 90%;
+                padding: 10px;
+            }
+            .login-container img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login Form</h2>
+        <img src="https://via.placeholder.com/100" alt="User Icon">
+        <form action="#">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter user name" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter user password" required>
+            
+            <button type="submit" class="btn-login">Login</button>
+            
+            <label>
+                <input type="checkbox" name="remember"> Remember me
+            </label>
+            
+            <button type="button" class="btn-cancel">Cancel</button>
+            
+            <a href="#" class="forgot-password">Forgot Password?</a>
+        </form>
+    </div>
+</body>
+</html>

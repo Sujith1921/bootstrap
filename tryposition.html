@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hindustan Times News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            background-color: #4682B4;
+            color: white;
+            padding: 10px 0;
+            margin: 0;
+        }
+        .news-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .news-item {
+            position: relative;
+            color: white;
+            background-color: #333;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .news-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            width: 100%;
+            padding: 10px;
+            font-size: 1.2em;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hindustan Times News</h1>
+    <div class="news-container">
+        <div class="news-item">
+            <img src="https://images.hindustantimes.com/img/2024/07/18/550x309/One-of-the-accused-was-staying-on-the-42nd-floor-o_1711739684795_1721297712642.jpg" alt="Crime">
+            <div class="overlay">
+                <strong>Crime</strong><br>
+                Gujarat ATS arrests drug manufacturer
+            </div>
+        </div>
+        <div class="news-item">
+            <img src="india.jpg" alt="India">
+            <div class="overlay">
+                <strong>India</strong><br>
+                Kharge slams Modi over Dibrugarh express accident
+            </div>
+        </div>
+        <div class="news-item">
+            <img src="world.jpg" alt="World">
+            <div class="overlay">
+                <strong>World</strong><br>
+                JD Vance has become US' biggest cheerleader for Trump
+            </div>
+        </div>
+        <div class="news-item">
+            <img src="entertainment.jpg" alt="Entertainment">
+            <div class="overlay">
+                <strong>Entertainment</strong><br>
+                Asif Ali wins hearts by giving paper boat to fan
+            </div>
+        </div>
+        <div class="news-item">
+            <img src="trending.jpg" alt="Trending">
+            <div class="overlay">
+                <strong>Trending</strong><br>
+                Taj Mahal visit
+            </div>
+        </div>
+        <div class="news-item">
+            <img src="latest-news.jpg" alt="Latest News">
+            <div class="overlay">
+                <strong>Latest News</strong><br>
+                Major accident at railway crossing
+            </div>
+        </div>
+    </div>
+</body>
+</html>

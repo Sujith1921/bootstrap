@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          body{
+            display: flex;
+        }
+        h1{
+            border: 1px solid blue;
+            text-align: center;
+            background-color: blue;
+            color: white;
+            position: relative;
+            bottom: 20px;
+            height: 30px;
+            font-size: 28px ;
+        }
+        .news-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .news-item {
+            position: relative;
+            color: white;
+            background-color: #ede6e6;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .overlay{
+            font-size: 25px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hindustan Times News</h1>
+    <div class="news-container">
+        <div class="news-item">
+            <img src="https://images.hindustantimes.com/img/2024/07/18/550x309/One-of-the-accused-was-staying-on-the-42nd-floor-o_1711739684795_1721297712642.jpg" alt="Crime">
+            <div class="overlay">
+           <strong><u>Crime</u></strong></a><br>
+           <a href="https://www.hindustantimes.com/india-news/gujarat-ats-busts-drug-manufacturing-unit-near-surat-3-held-101721297327025.html">    Gujarat ATS arrests drug manufacturer
+            </div>
+        </div>
+        <div class="news-item">
+            <img src="https://images.hindustantimes.com/img/2024/07/18/550x309/modi-kharge-pti_1707381875587_1721305933538.jpeg" alt="India">
+            <div class="overlay">
+                <strong><u>India</u></strong><br>
+               <a href="" Kharge slams Modi over Dibrugarh express accident
+            </div>
+        </div>
+        <div class="news-item">
+            <img src="https://images.hindustantimes.com/img/2024/07/18/550x309/Vance_1721306303845_1721306308205.jpg" alt="World">
+            <div class="overlay">
+                <strong>World</strong><br>
+                JD Vance has become US' biggest cheerleader for Trump
+            </div>
+        </div>
+        <div class="news-item">
+            <img src="https://images.hindustantimes.com/img/2024/07/18/550x309/Asif_Ali_paper_boat_1721297659244_1721297668781.jpg" alt="Entertainment">
+            <div class="overlay">
+                <strong>Entertainment</strong><br>
+                Asif Ali wins hearts by giving paper boat to fan
+            </div>
+        </div>
+        <div class="news-item">
+            <img src="https://images.hindustantimes.com/img/2024/07/18/550x309/egypt-man-7-wonders-of-world-GWR_1721305580502_1721305593155.jpg" alt="Trending">
+            <div class="overlay">
+                <strong>Trending</strong><br>
+                Taj Mahal visit
+            </div>
+        </div>
+        <div class="news-item">
+            <img src="https://images.hindustantimes.com/img/2024/07/18/550x309/4e5c0bdb-8d42-4c92-bfd4-3a480f7378b3_1721297863268_1721297869609.jpg" alt="Latest News">
+            <div class="overlay">
+                <strong>Latest News</strong><br>
+                Major accident at railway crossing
+            </div>
+        </div>
+    </div>
+</body>
+</html>

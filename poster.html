@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            max-width: 900px;
+            margin: 20px;
+        }
+        .news-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            background-color: #333;
+        }
+        .news-card img {
+            width: 100%;
+            height: auto;
+            opacity: 0.7;
+        }
+        .news-content {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            color: #fff;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        }
+        .category {
+            font-size: 1.2em;
+            text-transform: uppercase;
+        }
+        .description {
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="news-card">
+            <img src="crime.jpg" alt="Crime">
+            <div class="news-content">
+                <div class="category">Crime</div>
+                <div class="description">Gujarat ATS busts drug manufacturing</div>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="india.jpg" alt="India">
+            <div class="news-content">
+                <div class="category">India</div>
+                <div class="description">Kharge attacks Modi over Bhopal Express accident...</div>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="world.jpg" alt="World">
+            <div class="news-content">
+                <div class="category">World</div>
+                <div class="description">JD Vance has become US' 'biggest cheerleader' for Trump...</div>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="entertainment.jpg" alt="Entertainment">
+            <div class="news-content">
+                <div class="category">Entertainment</div>
+                <div class="description">Asif Ali wins hearts by gifting paper boat to fan...</div>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="trending.jpg" alt="Trending">
+            <div class="news-content">
+                <div class="category">Trending</div>
+                <div class="description">Egyptian man visits seven wonders of the world...</div>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="https://images.hindustantimes.com/img/2024/07/18/550x309/4e5c0bdb-8d42-4c92-bfd4-3a480f7378b3_1721297863268_1721297869609.jpg" alt="Latest News">
+            <div class="news-content">
+                <div class="category">Latest News</div>
+                <div class="description">Bhopal Express derails in Uttar Pradesh...</div>
+            </div>
+        </div>
+        <div class="news-card">
+            <img src="politics.jpg" alt="Politics">
+            <div class="news-content">
+                <div class="category">Politics</div>
+                <div class="description">I am speaking to AIADMK members, says OPS</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
